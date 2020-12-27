@@ -18,7 +18,7 @@
     <label for="img">URL картинки</label>
     <span class="helper-text" data-error="Введите url картинки"></span>
   </div>
-
+  <input type="hidden" name="_csrf" value={{csrf}}>
   <input type="hidden" name="id" value="{{course.id}}">
 
   <button class="btn btn-primary">Редактировать курс</button>
@@ -26,5 +26,6 @@
 
 <form action="/courses/remove" method="POST">
   <input type="hidden" name="id" value="{{ course.id }}">
+  <input type="hidden" name="_csrf" value={{csrf}}>
   <button class="btn red">Удалить кукрс</button>
 </form>
