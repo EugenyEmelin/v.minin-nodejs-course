@@ -15,11 +15,13 @@ router.get('/', async (req, res) => {
       .populate('userId', 'email name')
       .select('price title img')
 
+    console.log(courses, "COURSES")
+
     const coursesUserId = courses.map(val => val.userId._id.toString())
+    console.log(coursesUserId, 'coursesUserId')
     const currentUserId = req.user ? req.user._id.toString() : null
 
     console.log(coursesUserId, 'coursesUserId')
-    console.log(currentUserId, 'currentUserId')
     console.log(coursesUserId.includes(currentUserId), 'isMyCourse')
 
     res.render('courses', {
