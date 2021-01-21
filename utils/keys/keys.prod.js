@@ -14,7 +14,7 @@ const REFRESH_TOKEN = process.env.GMAIL_REFRESH_TOKEN
 const ACCESS_TOKEN = process.env.GMAIL_ACCESS_TOKEN
 
 module.exports = {
-  MONGODB_URI: 'mongodb+srv://Eugeny:kNVG8WKRfgIWzJEW@cluster0-rgjk0.mongodb.net/node-course-mongodb?retryWrites=true&w=majority',
+  MONGODB_URI: 'mongodb+srv://Eugeny:LNUcLq6YAQ3Zjy9T@cluster0-rgjk0.mongodb.net/node-course-mongodb?retryWrites=true&w=majority',
   SESSION_SECRET,
   EMAIL_FROM,
   BASE_URL,
